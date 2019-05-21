@@ -1,0 +1,29 @@
+storage:
+  path: storage
+
+secret:
+  admin: U84Ffq19fZ
+  student: KsSEcsJRyJ
+  teacher: U5z3H1wteP
+
+admin:
+  email: admin@ultimatestudsystem.com
+  password: admin-pass
+
+server:
+  port: ${PORT:5000}
+  error:
+    whitelabel:
+      enabled: false
+
+logging:
+  level:
+    root: WARN
+    org:
+      springframework:
+        security: DEBUG
+        web: ERROR
+      hibernate: DEBUG
+      apache:
+        commons:
+          dbcp2: DEBUG
